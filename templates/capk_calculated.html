@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAPK Calculated</title>
+</head>
+<body>
+
+
+<h1>CAPKData.INI Result Preview</h1>
+<textarea cols="100" rows="5" name="results">
+hashvalue = {{ key_text }}
+full_modulus = {{ key_length }}
+rid value = {{ rid_text }}
+full_modulus_text = {{ full_modulus_text }}
+</textarea>
+<br/>
+
+<!--<label for="title">Copy data below to CAPK.ini File</label>-->
+<h3>Copy data below to CAPKData.INI File</h3>
+<textarea cols="100" rows="20" id="title" name="results">
+{{ data_text }}
+moduluslen                     = {{ modulus_length }}
+exponentlen                    = 1
+exponent                       = {{ exponent_text }}
+hashvalue                      = {{ key_text }}
+capkexpdate                    = {{ expire_text }}
+{{ modulus_text}}
+mod1                           = {{ mod1 }}
+mod2                           = {{ mod2 }}
+mod3                           = {{ mod3 }}
+mod4                           = {{ mod4 }}
+mod5                           = {{ mod5 }}
+mod6                           = {{ mod6 }}
+mod7                           = {{ mod7 }}
+mod8                           = {{ mod8 }}
+</textarea>
+
+<br/>
+<a href="{% url 'capk' %}">Start Over</a>
+
+
+
+</body>
+</html>

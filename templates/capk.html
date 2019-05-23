@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAPK</title>
+</head>
+<body>
+<h1>CAPK Input</h1>
+
+
+    <form action="{% url 'capk_calculated' %}">
+         <p>RID List:  <textarea cols="10" rows="1" name="rid_text">A000000025</textarea></p>
+         <p>RID Index:  <textarea cols="2" rows="1" name="index_text"></textarea></p>
+         <p>RID Expires:  <textarea cols="10" rows="1" name="expires_text">311220</textarea></p>
+         <p>Exponent:  <textarea cols="5" rows="1" name="exponent_text">03</textarea></p>
+         <h3>Hash Value (SHA1):</h3>
+         <textarea cols="50" rows="1" name="key_text"></textarea>
+         <h3>Full Modulus Value:</h3>
+         <textarea cols="60" rows="8" name="full_modulus_text"></textarea>
+
+         <br/>
+         <input type="submit" value="Calculate!" />
+    </form>
+
+
+</body>
+</html>

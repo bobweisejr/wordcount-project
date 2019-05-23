@@ -8,10 +8,11 @@
 <body>
 <a href="{% url 'about' %}">About</a>
   <h1>WORD COUNT</h1>
-        <form action="{% url 'count' %}">
-            <textarea cols="40" rows="5" name="fulltext"></textarea>
+        <form action="{% url 'hex' %}">
+            <textarea cols="10" rows="1" name="hex"></textarea>
             <br/>
-            <input type="submit" value="Count!" />
+            <input type="submit" value="Convert Hex to Binary" />
         </form>
+<a href="{% url 'capk' %}">CAPK</a>
 </body>
 </html>

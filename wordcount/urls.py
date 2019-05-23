@@ -21,5 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home, name='home'),
     path('count/', views.count, name='count'),
-    path('about/', views.about, name='about')
+    path('about/', views.hex, name='hex'),
+    path('about/', views.about, name='about'),
+    path('capk/', views.capk, name='capk'),
+    path('capk_calculated/', views.capk_calculated, name='capk_calculated'),
+    path('', views.home, name='home')
 ]
